@@ -7,12 +7,14 @@
     <title>Crystal Collector Game</title>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower|Playfair+Display|Poppins|Quicksand|Raleway|Work+Sans" rel="stylesheet">
 
 </head>
 <body>
+	<div class="container">
 	<div class="row">
 		<div class="col-md-12 title">
 			Crystal Collector Game
@@ -34,10 +36,10 @@
 			- The value of each crystal is hidden from you until you click on it.
 			<br/>
 			- Each time when the game starts, the game will change the values of each crystal.
-		</div>		
+		</div>	
 	</div>
 	<div class="row">
-		<div class="col-md-12 crystals">
+		<div class="col-lg-6 crystals">
 			<p class="subtitle">Click on the Crystals to Play!</p>
 			<br/>
 			<img src="assets/images/redCrystal.jpg" id="red" width="100" height="100" alt="Red Crystal"/>
@@ -48,12 +50,13 @@
 			<br/>
 			<img src="assets/images/greenCrystal.jpg" id="green" width="100" height="100" alt="Green Crystal"/>
 		</div>
-		<div class="col-md-12 scoreRecord">
+		<div class="col-lg-6 scoreRecord">
 			<p class="subtitle2">Number to Win:</p> <span id="randomNumber" class="score"></span>	
 			<p class="subtitle2">Your Score:</p> <span id="totalScore" class="score"></span>	
 			<p class="subtitle2">Wins:</p> <span id="numberOfWins" class="score"></span>
 			<p class="subtitle2">Losses:</p> <span id="numberOfLosses" class="score"></span>		
 		</div>	
 	</div>
+</div>
 </body>
 </html>
